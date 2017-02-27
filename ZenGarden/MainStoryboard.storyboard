@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="X6R-jk-0vH">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="vrW-E3-Pth">
+            <objects>
+                <viewController id="X6R-jk-0vH" customClass="ViewController" customModule="ZenGarden" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fPT-K2-jZd"/>
+                        <viewControllerLayoutGuide type="bottom" id="7XM-Cc-f2b"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GbV-5u-nkv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rake" translatesAutoresizingMaskIntoConstraints="NO" id="jzq-si-i1j">
+                                <rect key="frame" x="35" y="75" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="040-bN-uSC" appends="YES" id="sAI-fT-MJf"/>
+                                </connections>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rock1" translatesAutoresizingMaskIntoConstraints="NO" id="QoU-6Q-1zI">
+                                <rect key="frame" x="67" y="245" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="sgB-4s-qs5" appends="YES" id="sy0-TZ-ceO"/>
+                                </connections>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="swordinrock" translatesAutoresizingMaskIntoConstraints="NO" id="SOP-V8-qeq">
+                                <rect key="frame" x="16" y="381" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="bob-wG-a0n" appends="YES" id="gH1-y7-Azr"/>
+                                </connections>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="shrub" translatesAutoresizingMaskIntoConstraints="NO" id="9Gm-BG-fyz">
+                                <rect key="frame" x="67" y="519" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="mN7-m6-Qpz" appends="YES" id="rmN-JJ-hYq"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="bushOutlet" destination="mN7-m6-Qpz" id="WIy-VY-5BI"/>
+                        <outlet property="rakeImage" destination="jzq-si-i1j" id="lGt-hD-zO5"/>
+                        <outlet property="rakeOutlet" destination="040-bN-uSC" id="DrG-LK-ZGK"/>
+                        <outlet property="rockImage" destination="QoU-6Q-1zI" id="NXF-YF-NGn"/>
+                        <outlet property="rockOutlet" destination="sgB-4s-qs5" id="Iks-L1-PUR"/>
+                        <outlet property="shrubImage" destination="9Gm-BG-fyz" id="Prh-cT-eDZ"/>
+                        <outlet property="swordInRockImage" destination="SOP-V8-qeq" id="IdM-Ve-yTR"/>
+                        <outlet property="swordInRockOutlet" destination="bob-wG-a0n" id="1ED-aj-kcl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NXa-ek-xkA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="040-bN-uSC">
+                    <connections>
+                        <action selector="rakeGesture:" destination="X6R-jk-0vH" id="uyk-2t-uIJ"/>
+                        <outlet property="delegate" destination="jzq-si-i1j" id="8cg-XB-TPc"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="sgB-4s-qs5">
+                    <connections>
+                        <action selector="rockGesture:" destination="X6R-jk-0vH" id="AMb-QN-RNb"/>
+                        <outlet property="delegate" destination="QoU-6Q-1zI" id="al0-Vj-FGN"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="bob-wG-a0n">
+                    <connections>
+                        <action selector="swordInRockGesture:" destination="X6R-jk-0vH" id="7hm-AY-HLM"/>
+                        <outlet property="delegate" destination="SOP-V8-qeq" id="W6M-OX-wn5"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="mN7-m6-Qpz">
+                    <connections>
+                        <action selector="shrubGesture:" destination="X6R-jk-0vH" id="be7-yx-f2b"/>
+                        <outlet property="delegate" destination="9Gm-BG-fyz" id="l58-QP-g1s"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="106" y="157"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="rake" width="402" height="597"/>
+        <image name="rock1" width="297" height="234"/>
+        <image name="shrub" width="600" height="396"/>
+        <image name="swordinrock" width="498" height="600"/>
+    </resources>
+</document>

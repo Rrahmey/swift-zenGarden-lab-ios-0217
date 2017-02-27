@@ -11,6 +11,7 @@
 		1BA85B0D1D2574EF008D42CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA85B0C1D2574EF008D42CE /* ViewController.swift */; };
 		1BA85B121D2574EF008D42CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BA85B111D2574EF008D42CE /* Assets.xcassets */; };
 		1BA85B151D2574EF008D42CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA85B131D2574EF008D42CE /* LaunchScreen.storyboard */; };
+		D3C9CBFF1E6475C30036CF92 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3C9CBFE1E6475C30036CF92 /* MainStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		1BA85B111D2574EF008D42CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BA85B141D2574EF008D42CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1BA85B161D2574EF008D42CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3C9CBFE1E6475C30036CF92 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				1BA85B0A1D2574EF008D42CE /* AppDelegate.swift */,
 				1BA85B0C1D2574EF008D42CE /* ViewController.swift */,
+				D3C9CBFE1E6475C30036CF92 /* MainStoryboard.storyboard */,
 				1BA85B111D2574EF008D42CE /* Assets.xcassets */,
 				1BA85B131D2574EF008D42CE /* LaunchScreen.storyboard */,
 				1BA85B161D2574EF008D42CE /* Info.plist */,
@@ -93,7 +96,7 @@
 				TargetAttributes = {
 					1BA85B061D2574EF008D42CE = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 3E2QGNXM7N;
+						DevelopmentTeam = 56S3PA4JK8;
 						LastSwiftMigration = 0800;
 					};
 				};
@@ -121,6 +124,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3C9CBFF1E6475C30036CF92 /* MainStoryboard.storyboard in Resources */,
 				1BA85B151D2574EF008D42CE /* LaunchScreen.storyboard in Resources */,
 				1BA85B121D2574EF008D42CE /* Assets.xcassets in Resources */,
 			);
@@ -239,7 +243,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3E2QGNXM7N;
+				DEVELOPMENT_TEAM = 56S3PA4JK8;
 				INFOPLIST_FILE = ZenGarden/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = FlatironSchool.com.ZenGarden;
@@ -252,7 +256,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3E2QGNXM7N;
+				DEVELOPMENT_TEAM = 56S3PA4JK8;
 				INFOPLIST_FILE = ZenGarden/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = FlatironSchool.com.ZenGarden;
